@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.header {
+  animation: slide-header 1s;
+}
+
+@keyframes slide-header {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* HERO */
+
+.hero--img img {
+  animation: img--slide 1.2s;
+}
+
+@keyframes img--slide {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.hero--info h1 {
+  animation: left--slide 1.4s;
+}
+
+.hero--info p {
+  animation: left--slide 1.5s;
+}
+
+.hero--info form {
+  animation: left--slide 1.6s;
+}
+
+@keyframes left--slide {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* MEDIAQUERIES */
