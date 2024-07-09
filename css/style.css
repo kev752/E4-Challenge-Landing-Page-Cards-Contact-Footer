@@ -10,49 +10,59 @@
   /* border: 1px red solid; */
 }
 
-body {
-  background-color: #131415;
-}
-
 .header {
-  width: 100;
   height: 70px;
-  backdrop-filter: blur(10px);
-  background-color: rgba(19, 20, 21, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0px 50px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(19, 20, 21, 0.7);
+  position: fixed;
+  width: 100%;
   z-index: 1;
+}
 
-  .header--logo img {
-    width: auto;
-    height: 50px;
-    transition: all 0.4s;
-  }
+.header img {
+  height: 50px;
+  width: auto;
+  transition: all 0.5s;
+}
 
-  .header--logo img:hover {
-    transform: scale(1.1);
-  }
+.header img:hover {
+  transform: scale(1.1);
+}
 
-  .header--navbar ul {
-    display: flex;
-    gap: 40px;
-    transition: all 0.4s ease;
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+}
 
-  .header--navbar ul li a {
-    color: white;
-    transition: all 0.2s;
-  }
+.navbar {
+  display: flex;
+}
 
-  .header--navbar ul li a:hover {
-    background-color: rgba(207, 207, 207, 0.1);
-    padding: 8px;
-    border-radius: 15px;
-  }
+.navbar i {
+  font-size: 36px;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  transition: all 0.4s;
+}
+
+.navbar-link:hover {
+  background-color: rgba(207, 207, 207, 0.1);
+  padding: 8px;
+  border-radius: 15px;
 }
 
 .main {
@@ -69,7 +79,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  padding: 4rem;
+  padding: 6rem 4rem 4rem 4rem;
   gap: 8rem;
 
   .hero--info {

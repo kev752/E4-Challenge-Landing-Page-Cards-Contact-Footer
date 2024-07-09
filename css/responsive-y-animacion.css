@@ -82,6 +82,10 @@ html {
     border: 1px red solid;
   } */
 
+  .navbar ul {
+    gap: 50px;
+  }
+
   .main--hero {
     display: flex;
     flex-wrap: wrap;
@@ -119,9 +123,26 @@ html {
   }
 
   .footer {
-    display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
+    .footer--policy {
+      order: 2;
+    }
+    .footer--social {
+      order: 1;
+    }
+    .footer--media {
+      order: 3;
+    }
+  }
+
+  .footer a {
+    width: fit-content;
+  }
+
+  .footer--policy,
+  .footer--media {
+    align-items: center;
   }
 }
 
@@ -129,6 +150,12 @@ html {
   .main--hero {
     width: 98vw;
     text-align: center;
+  }
+
+  .hero--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero--img img,
@@ -143,5 +170,44 @@ html {
 
   .main--contacto {
     width: 80vw;
+  }
+  .navbar ul {
+    background-color: rgba(19, 20, 21, 0.995);
+    width: 100vw;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar ul li a {
+    color: white;
+  }
+
+  .navbar i {
+    display: block;
+    color: white;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 5rem;
+    .footer--policy {
+      order: 2;
+    }
+    .footer--social {
+      order: 1;
+    }
+    .footer--media {
+      order: 3;
+    }
   }
 }
